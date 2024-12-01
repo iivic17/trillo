@@ -219,7 +219,7 @@
         }
     }
 
-    &__icon + span {
+    &__icon+span {
         @media only screen and (max-width: $bp-smallest) {
             display: none;
         }
@@ -419,11 +419,15 @@
         height: 1rem;
         width: 1rem;
         margin-right: .7rem;
-        // background-image: url(../img/svg/chevron-thin-right.svg);
-        // background-size: cover;
-        background-color: var(--color-primary);
-        mask-image: url(../img/svg/chevron-thin-right.svg);
-        mask-size: cover;
+        background-image: url(../img/svg/chevron-thin-right.svg);
+        background-size: cover;
+
+        @supports (mask-image: url()) or (-webkit-mask-image: url()) {
+            background-color: var(--color-primary);
+            mask-image: url(../img/svg/chevron-thin-right.svg);
+            mask-size: cover;
+            background-image: none;
+        }
     }
 }
 
@@ -556,7 +560,7 @@
     overflow: hidden;
     cursor: pointer;
 
-    & > * {
+    &>* {
         display: inline-block;
         height: 100%;
         width: 100%;
