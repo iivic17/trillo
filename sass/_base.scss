@@ -1,3 +1,7 @@
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medum: 56.25em;
+
 :root {
     --color-primary: #eb2f64;
     --color-primary-light: #FF3366;
@@ -32,6 +36,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -46,4 +54,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-largest) {
+        display: block;
+    }
 }
