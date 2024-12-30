@@ -1,8 +1,8 @@
 # Trillo
 
-Trillo is a static dashboard snapshot built with SCSS, showcasing advanced Flexbox techniques to achieve responsive and visually appealing layouts. It serves as a portfolio project designed to highlight modern web design and development skills.
+Trillo is a static dashboard snapshot built with **SCSS**, showcasing advanced Flexbox techniques for responsive and modern UI layouts.
 
-![Trillo Mockup](trillo-mockup.png)
+![Trillo Screenshot](trillo-mockup.png)
 
 ## Features
 
@@ -19,15 +19,3 @@ Trillo is a static dashboard snapshot built with SCSS, showcasing advanced Flexb
 ### 📱 Mobile Optimization
 - **Media Queries:** Fine-tuned styles for seamless adaptation to smaller screen sizes.
 - **Collapsed Navigation:** Adjustments for compact layouts on mobile devices.
-
-## Technologies
-
-### Development Tools
-- **Node-Sass:** Compiles SCSS into CSS for modern styling.
-- **PostCSS Autoprefixer:** Ensures compatibility with various browsers by adding vendor prefixes.
-- **Live Server:** Enables real-time previews during development.
-
-### CSS Techniques
-- **CSS Variables:** Centralized management of theme styles for easy maintenance.
-- **Custom Shadows:** Crafted shadow styles for depth and emphasis.
-- **Keyframe Animations:** Used to create smooth pulsating and slide effects.
